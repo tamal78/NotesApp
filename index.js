@@ -61,6 +61,7 @@ function showNotes() {
 
 function editNote(ind) {
   saveButton.style.display = "inline";
+  addNoteButton.style.display = "none";
   let notes = localStorage.getItem("notes");
   notes = JSON.parse(notes);
   addTitle.value = `${notes[ind].title}`;
@@ -72,6 +73,7 @@ function editNote(ind) {
     notes[ind].text = addText.value;
     localStorage.setItem("notes", JSON.stringify(notes));
     saveButton.style.display = "none";
+    addNoteButton.style.display = "inline";
     addTitle.value = "";
     addText.value = "";
     showNotes();
