@@ -77,6 +77,7 @@ function editNote(ind) {
     addTitle.value = "";
     addText.value = "";
     showNotes();
+    location.reload();
   });
 }
 
