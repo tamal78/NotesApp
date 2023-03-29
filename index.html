@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" type="image/x-icon" href="./icons8-notes-50.png" />
+    <title>My Notes App</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a id="mynotes">My notes</a>
+        <a id="archnotes" s>Archived notes</a>
+        <a id="delnotes">Deleted notes</a>
+      </nav>
+      <div id="input-box">
+        <input type="text" id="addTitle" placeholder="Title" />
+        <textarea
+          name=""
+          id="addText"
+          cols="30"
+          rows="10"
+          placeholder="Take a note.."
+        ></textarea>
+        <div id="btn">
+          <button id="addNote">Add</button>
+          <button id="save" style="display: none">Save</button>
+        </div>
+      </div>
+
+      <div id="notes"></div>
+      <div id="deletednotes"></div>
+      <div id="archivednotes"></div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
